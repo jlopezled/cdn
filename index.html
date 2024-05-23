@@ -13,15 +13,15 @@
     </video>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('video');
-            video.muted = true;
-            console.log('Video load start time:', performance.now());
-            video.play();
-            video.addEventListener('play', function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('video');
+        video.muted = true;
+        console.log('Video load start time:', performance.now());
+        video.play();
+        video.addEventListener('play', function() {
             console.log('Video playback started at:', performance.now());
-            
         });
-    </script>
+    });
+</script>
 </body>
 </html>
