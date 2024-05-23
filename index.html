@@ -6,9 +6,17 @@
 </head>
 <body>
     <h1>Vídeo incrustado en HTML5</h1>
-    <video controls width="1280" autoplay>
+    <video id="video" controls width="1280" autoplay>
         <source src="video.mp4" type="video/mp4">
         Tu navegador no soporta la etiqueta de vídeo HTML5.
     </video>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('video');
+            video.muted = true;
+            video.play();
+        });
+    </script>
 </body>
 </html>
