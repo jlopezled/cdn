@@ -11,28 +11,16 @@
         <source src="video.mkv" type="video/x-matroska">
         Tu navegador no soporta la etiqueta de vídeo HTML5.
     </video>
-     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('video');
-            console.log('Video load start time:', performance.now());
 
-            // Intentar reproducir el video automáticamente
-            var playPromise = video.play();
-
-            // Manejo de la promesa de reproducción
-            if (playPromise !== undefined) {
-                playPromise.then(function() {
-                    console.log('Video playback started at:', performance.now());
-                }).catch(function(error) {
-                    console.log('Autoplay was prevented:', error);
-                    // Puede manejar el error aquí, como mostrar un botón para que el usuario haga clic y reproduzca el video
-                });
-            }
-
-            video.addEventListener('play', function() {
-                console.log('Video playback started at:', performance.now());
-            });
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('video');
+        console.log('Video load start time:', performance.now());
+        video.play();
+        video.addEventListener('play', function() {
+            console.log('Video playback started at:', performance.now());
         });
+    });
     </script>
     
 </body>
