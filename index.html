@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio 1</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Estilos básicos para centrar el vídeo en la página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        video {
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Vídeo incrustado en HTML5</h1>
-    <video id="video" controls width="1280" autoplay>
+    <video id="video" controls width="1280" autoplay loop muted preload="auto">
         <source src="video720.mp4" type="video/mp4">
         <source src="video720.mkv" type="video/x-matroska">
         Tu navegador no soporta la etiqueta de vídeo HTML5.
