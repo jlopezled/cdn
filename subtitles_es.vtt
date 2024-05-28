@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Bienvenidos a este vídeo preparado para la PRAC de Plataformas de Distribución y Publicación.
+
+00:00:05.000 --> 00:00:10.000
+En este vídeo, cubriremos los conceptos básicos del vídeo en HTML5.
+
+00:00:10.000 --> 00:00:15.000
+Primero, veamos cómo usar la etiqueta <video>.
+
+00:00:15.000 --> 00:00:20.000
+Luego, veremos cómo agregar controles, reproducción automática y otros atributos.
